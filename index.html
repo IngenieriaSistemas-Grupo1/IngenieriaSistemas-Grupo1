@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Encuesta</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+            max-width: 600px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .campo {
+            margin-bottom: 15px;
+        }
+
+        .campo label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .campo input[type="text"],
+        .campo select,
+        .campo textarea {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+        <h1>Encuesta Sobre el Impacto Académico Durante la Pandemia</h1>
+        <p>Por favor, responde a las siguientes preguntas de manera honesta y completa. Tu opinión es valiosa para comprender mejor cómo la pandemia ha afectado tu experiencia académica.</p>
+    </header>
+    
+    <form class="Encuesta" action="https://formsubmit.co/sebastiancarlin9@gmail.com" method="POST">
+       <div class="campo">
+            <label for="edad">Edad</label>
+            <select id="edad" name="Edad" required>
+                <option value="" selected disabled>Seleccione una opción</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+                <option value="32">32</option>
+                <option value="33">33</option>
+                <option value="34">34</option>
+                <option value="35">35</option>
+                <option value="36">36</option>
+                <option value="37">37</option>
+                <option value="38">38</option>
+                <option value="39">39</option>
+                <option value="40">40</option>
+            </select>
+       </div>
+
+       <div class="campo">
+            <label for="experiencia-academica">1. ¿Cómo ha afectado la pandemia a tu experiencia académica en términos de aprendizaje?</label>
+            <select id="experiencia-academica" name="Experiencia_Academica" required>
+                <option value="" selected disabled>Seleccione una opción</option>
+                <option value="mucho_mejor">Mucho mejor</option>
+                <option value="Mejor">Mejor</option>
+                <option value="Igual">Igual</option>
+                <option value="Peor">Peor</option>
+                <option value="Mucho Peor">Mucho Peor</option>
+                <!-- Otras opciones de experiencia académica aquí -->
+            </select>
+       </div>
+
+       <div class="campo">
+            <label for="desafios-estudios">2. ¿Cuáles han sido los principales desafíos que has enfrentado durante este período en 
+                relación con tus estudios?</label>
+            <select id="desafios-estudios" name="Desafios_Estudios" required>
+                <option value="" selected disabled>Seleccione una opción</option>
+                <option value="falta_recursos_academicos">Falta de acceso a recursos académicos (bibliotecas, laboratorios, etc.)</option>
+                <option value="Dificultades para adaptarme al aprendizaje en linea">Dificultades para adaptarme al aprendizaje en linea</option>
+                <option value="Problemas de conexion a internet">Problemas de conexion a internet</option>
+                <option value="Dificultades para mantener la motivacion y la concentracion">Dificultades para mantener la motivacion y la concentacion</option> 
+                <!-- Otras opciones de desafíos de estudio aquí -->
+            </select>
+            <textarea id="otros-desafios" name="Otros_Desafios" rows="2" placeholder="Especifica otros desafíos"></textarea>
+        </div>   
+
+       <div class="campo">
+            <label for="herramientas-recursos">3. ¿Qué herramientas o recursos han sido más útiles para ti durante este tiempo?</label>
+            <select id="herramientas-recursos" name="Herramientas_Recursos" required>
+                <option value="" selected disabled>Seleccione una opción</option>
+                <option value="plataformas_aprendizaje_linea">Plataformas de aprendizaje en línea (Zoom, Moodle, etc.)</option>
+                <option value="Recursos educativos en linea">Recursos educativos en linea</option> 
+                <option value="Comunicacion con profesores a travez de correo electronico u otras plataformas">Comunicacion con profesores a travez de correo electronico u otras plataformas</option>
+                <option value="Grupos de estudios virtuales">Grupos de estudios virtuales</option>
+                <!-- Otras opciones de herramientas/recursos aquí -->
+            </select>
+            <textarea id="otros-herramientas-recursos" name="Otros_Herramientas_Recursos" rows="2" placeholder="Especifica otros recursos"></textarea>
+        </div>
+
+       <div class="campo">
+            <label for="bienestar-emocional">4. ¿Cómo ha afectado la pandemia a tu bienestar emocional en relación con tus estudios?</label>
+            <select id="bienestar-emocional" name="Bienestar_Emocional" required>
+                <option value="" selected disabled>Seleccione una opción</option>
+                <option value="mucho_mejor">Mucho mejor</option>
+                <option value="Mejor">Mejor</option>
+                <option value="Igual">Igual</option>
+                <option value="Peor">Peor</option>
+                <option value="Mucho Peor">Mucho Peor</option>
+                <!-- Otras opciones de bienestar emocional aquí -->
+            </select>
+        </div>
+
+       <div class="campo">
+            <label for="dificultades-adicionales">5. ¿Has experimentado dificultades adicionales debido a la pandemia que hayan afectado negativamente tu rendimiento académico? (Por ejemplo: problemas de salud mental, dificultades económicas, responsabilidades familiares adicionales, etc.)</label>
+            <select id="dificultades-adicionales" name="Dificultades_Adicionales" required>
+                <option value="" selected disabled>Seleccione una opción</option>
+                <option value="si">Sí</option>
+                <option value="No">No</option>
+                <!-- Otras opciones de dificultades adicionales aquí -->
+            </select>
+            <textarea id="Especifica" name="Especifica" rows="2" placeholder="Especifica Las Dificultades"></textarea>
+       </div>
+
+       <div class="campo">
+            <label for="medidas-mitigar-efectos">6. ¿Qué medidas crees que podrían ayudar a mitigar los efectos negativos de la pandemia en tu experiencia académica?</label>
+            <textarea id="medidas-mitigar-efectos" name="Medidas_Mitigar_Efectos" rows="4" required></textarea>
+       </div>
+
+       <div class="campo">
+            <label for="comentario-adicional">7. ¿Tienes algún comentario adicional sobre cómo la pandemia ha afectado tu experiencia académica que te gustaría compartir?</label>
+            <textarea id="comentario-adicional" name="Comentario_Adicional" rows="4" required></textarea>
+       </div>   
+
+       <div class="campo">
+            <label for="efectividad-aprendizaje-distancia">8. ¿Qué tan efectivo fue el aprendizaje a distancia para ti?</label>
+            <textarea id="efectividad-aprendizaje-distancia" name="Efectividad_Aprendizaje_Distancia" rows="4" required></textarea>
+        </div>
+        
+        <div class="campo">
+            <label for="efectividad-profesores-linea">9. ¿Qué tan efectivos fueron los profesores al estudiar en línea?</label>
+            <textarea id="efectividad-profesores-linea" name="Efectividad_Profesores_Linea" rows="4" required></textarea>
+        </div>
+        
+        <div class="campo">
+            <label for="sentimiento-clases-presenciales">10. ¿Cómo te sentiste al regresar a las clases presenciales?</label>
+            <textarea id="sentimiento-clases-presenciales" name="Sentimiento_Clases_Presenciales" rows="4" required></textarea>
+        </div>
+        
+       <button type="submit" style="margin-top: 20px;">Enviar formulario</button>
+    </form> 
+  </div>  
+  
+</body>
+</html>
